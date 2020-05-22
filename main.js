@@ -23,6 +23,10 @@ var elem = document.getElementById('canvas1'),
 elem.addEventListener('click', function(event) {
   var clickX = event.pageX - elemLeft,
     clickY = event.pageY - elemTop;
+    console.log("offsetLeft", elem.offsetLeft);
+    console.log("clientLeft", elem.clientLeft);
+    console.log("pageX", event.pageX);
+    console.log(clickX);
   // console.log(x,y);
   let balls = getGrid();
   for (let i = 0; i < balls.length; i++) {
