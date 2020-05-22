@@ -14,8 +14,8 @@ export function startGame() {
 
 
 var elem = document.getElementById('canvas1'),
-  elemLeft = elem.offsetLeft - elem.clientLeft,
-  elemTop = elem.offsetTop - elem.clientTop,
+  elemLeft = elem.offsetLeft + elem.clientLeft,
+  elemTop = elem.offsetTop + elem.clientTop,
   context = elem.getContext('2d'),
   elements = [];
 
